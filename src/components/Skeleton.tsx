@@ -32,7 +32,7 @@ const Skeleton = ({ title, content }: SkeletonProps) => {
         "
       />
       <div className="flex flex-col items-center min-h-screen">
-        <div className="absolute top-1/5 max-[564px]:top-16 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-center justify-between min-w-[156px] z-50 gap-96 max-[564px]:gap-80 max-[432px]:gap-56 max-[365px]:gap-48 max-[340px]:gap-32">
+        <div className="absolute top-1/5 max-[564px]:top-16 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-center justify-between min-w-[156px] z-50 gap-96 max-[564px]:gap-80 max-[468px]:gap-56 max-[365px]:gap-48 max-[340px]:gap-32">
           <p onClick={() => navigate(-1)} className="text-[#f2f2f2] text-xl hover:text-[#737373] transition duration-300 cursor-pointer"><IoIosArrowBack /></p>
           <h1 className="text-[#f2f2f2] text-4xl">{title}</h1>
         </div>

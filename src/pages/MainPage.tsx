@@ -82,7 +82,7 @@ const MainPage = () => {
         <div className="flex items-center justify-center mt-8 gap-4 max-[564px]:">
           <SocialLink href='https://github.com/iotavio-lima' icon={<FaGithub />} />
           <SocialLink href='https://www.linkedin.com/in/iotavio-lima/' icon={<FaLinkedin />} />
-          <SocialLink href='https://www.instagram.com/limasc7_/' icon={<FaInstagram />} />
+          <SocialLink href='https://www.instagram.com/otavlima7_/' icon={<FaInstagram />} />
           <SocialLink href='mailto:otavio.lima.co@gmail.com' icon={<MdOutlineMail />} />
         </div>
         <Footer />
