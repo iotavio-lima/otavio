@@ -15,7 +15,7 @@ const Skeleton = ({ title, content }: SkeletonProps) => {
   }, []);
 
   return (
-    <div className="relative min-h-screen overflow-hidden">
+    <>
       <img
         src={statueOfLiberty}
         alt="Pic"
@@ -38,7 +38,7 @@ const Skeleton = ({ title, content }: SkeletonProps) => {
         </div>
         {content}
       </div>
-    </div>
+    </>
   )
 }
 

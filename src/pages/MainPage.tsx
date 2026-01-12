@@ -45,7 +45,7 @@ const MainPage = () => {
       />
       <div className="flex flex-col items-center justify-center min-h-screen">
         <img
-          className="w-48 rounded-full border border-[#0D0D0D] animate-float transition-transform duration-500 ease-out hover:scale-[1.02] hover:-translate-y-[2px] mt-2 max-[564px]:mt-16"
+          className="w-48 rounded-full border border-[#0D0D0D] animate-float transition-transform duration-500 ease-out hover:scale-[1.02] hover:-translate-y-[2px] max-[564px]:mt-16"
           src={pic}
           alt="Profile Pic"
         />
