@@ -8,8 +8,16 @@ import SocialLink from "../components/SocialLink.tsx";
 import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 import { MdOutlineMail } from "react-icons/md";
 import Footer from "../components/Footer.tsx";
+import { IoSend } from "react-icons/io5";
+import emailjs from "emailjs-com";
+import SucessMessage from "../components/SucessMessage.tsx";
+import ErrorMessage from "../components/ErrorMessage.tsx";
 
 const MainPage = () => {
+  const [message, setMessage] = useState("");
+  const [showSuccess, setShowSuccess] = useState(false);
+  const [showError, setShowError] = useState(false);
+
   const titles = [
     "Software Engineer",
     "Full-Stack Developer",
@@ -26,6 +34,31 @@ const MainPage = () => {
     return () => clearInterval(interval);
   }, []);
 
+  const sendEmail = () => {
+    if (!message.trim()) return;
+
+    emailjs.send(
+      import.meta.env.VITE_EMAILJS_SERVICE_ID,
+      import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+      {
+        user_name: "Portfolio Website",
+        user_email: "noreply@portfolio.com",
+        message: message,
+      },
+      import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+    )
+      .then(() => {
+        setMessage("");
+        setShowSuccess(true);
+
+        setTimeout(() => setShowSuccess(false), 2500);
+      })
+      .catch(() => {
+        setShowError(true);
+
+        setTimeout(() => setShowError(false), 2500);
+      });
+  };
   return (
     <div className="relative min-h-screen overflow-hidden">
       <img
@@ -44,6 +77,8 @@ const MainPage = () => {
         "
       />
       <div className="flex flex-col items-center justify-center min-h-screen">
+        <SucessMessage show={showSuccess} />
+        <ErrorMessage show={showError} />
         <img
           className="w-48 rounded-full border border-[#0D0D0D] animate-float transition-transform duration-500 ease-out hover:scale-[1.02] hover:-translate-y-[2px] max-[564px]:mt-16"
           src={pic}
@@ -78,6 +113,10 @@ const MainPage = () => {
           <Link to='/about' text='About'/>
           <Link to='/blogs' text='Blogs'/>
           <Link to='/projects' text='Projects'/>
+        </div>
+        <div className="flex items-center justify-center gap-2">
+          <input type="text" placeholder="Send me a message" value={message} onChange={(e) => setMessage(e.target.value)} className="bg-[#0D0D0D] text-[#D9D9D9] placeholder:text-[#D9D9D9] h-12 w-136 max-[564px]:w-64 max-[348px]:w-56 px-4 rounded-xl outline-none"/>
+          <button onClick={sendEmail} className="flex items-center justify-center bg-[#121212] hover:bg-[#0D0D0D] transition duration-300 text-[#D9D9D9] h-12 w-12 rounded-2xl shadow-[-4px_4px_10px_rgba(0,0,0,0.6)] cursor-pointer"><IoSend /></button>
         </div>
         <div className="flex items-center justify-center mt-8 gap-4 max-[564px]:">
           <SocialLink href='https://github.com/iotavio-lima' icon={<FaGithub />} />
