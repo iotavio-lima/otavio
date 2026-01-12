@@ -6,9 +6,12 @@ const Blogs = () => {
     <Skeleton
       title='Blogs'
       content={
-        <div className="mt-64 max-[564px]:mt-32">
-          <Link text='How did I learn english?' to='/how-did-i-learn-english' />
+        <div className="h-screen overflow-hidden">
+          <div className="mt-64 max-[564px]:mt-32">
+            <Link text='How did I learn english?' to='/how-did-i-learn-english' />
+          </div>
         </div>
+
       }
     />
   )
