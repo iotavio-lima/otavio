@@ -115,8 +115,8 @@ const MainPage = () => {
           <Link to='/projects' text='Projects'/>
         </div>
         <div className="flex items-center justify-center gap-2">
-          <input type="text" placeholder="Send me a message" value={message} onChange={(e) => setMessage(e.target.value)} className="bg-[#0D0D0D] text-[#D9D9D9] placeholder:text-[#D9D9D9] h-12 w-136 max-[564px]:w-80 max-[416px]:w-64 max-[348px]:w-56 px-4 rounded-xl outline-none"/>
-          <button onClick={sendEmail} className="flex items-center justify-center bg-[#121212] hover:bg-[#0D0D0D] transition duration-300 text-[#D9D9D9] h-12 w-12 rounded-2xl shadow-[-4px_4px_10px_rgba(0,0,0,0.6)] cursor-pointer"><IoSend /></button>
+          <input type="text" placeholder="Send me a message" value={message} onChange={(e) => setMessage(e.target.value)} className="bg-[#0D0D0D] text-[#D9D9D9] placeholder:text-[#D9D9D9] h-12 w-136 max-[564px]:w-80 max-[416px]:w-64 max-[348px]:w-56 px-4 rounded-xl shadow-[-4px_4px_0_0_rgba(0,0,0,0.3)] outline-none"/>
+          <button onClick={sendEmail} className="flex items-center justify-center bg-[#121212] hover:bg-[#0D0D0D] transition duration-300 text-[#D9D9D9] h-12 w-12 rounded-2xl shadow-[-4px_4px_0_0_rgba(0,0,0,0.3)] cursor-pointer"><IoSend /></button>
         </div>
         <div className="flex items-center justify-center mt-8 gap-4 max-[564px]:">
           <SocialLink href='https://github.com/iotavio-lima' icon={<FaGithub />} />
