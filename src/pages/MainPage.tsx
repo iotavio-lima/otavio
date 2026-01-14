@@ -69,7 +69,7 @@ const MainPage = () => {
           inset-x-0
           bottom-0
           mx-auto
-          w-[400px]
+          w-[600px]
           -z-10
           opacity-40
           pointer-events-none
