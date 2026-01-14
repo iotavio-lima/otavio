@@ -1,4 +1,4 @@
-import statueOfLiberty from "../assets/pic2.png";
+import statuePic from "../assets/pic2.png";
 import { IoIosArrowBack } from "react-icons/io";
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
@@ -17,7 +17,7 @@ const Skeleton = ({ title, content }: SkeletonProps) => {
   return (
     <>
       <img
-        src={statueOfLiberty}
+        src={statuePic}
         alt="Pic"
         className="
           fixed
@@ -28,7 +28,7 @@ const Skeleton = ({ title, content }: SkeletonProps) => {
           -z-10
           opacity-40
           pointer-events-none
-          md:translate-x-90
+          md:translate-x-70
         "
       />
       <div className="flex flex-col items-center min-h-screen">

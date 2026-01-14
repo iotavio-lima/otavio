@@ -1,5 +1,5 @@
 import pic from '../assets/p_pic.jpeg'
-import statueOfLiberty from '../assets/pic.png'
+import statuePic from '../assets/pic.png'
 import Card from "../components/Card.tsx";
 import Link from "../components/Link.tsx";
 import { motion, AnimatePresence } from "framer-motion";
@@ -62,18 +62,18 @@ const MainPage = () => {
   return (
     <div className="relative min-h-screen overflow-hidden">
       <img
-        src={statueOfLiberty}
+        src={statuePic}
         alt="Pic"
         className="
           fixed
           inset-x-0
           bottom-0
           mx-auto
-          w-[600px]
+          w-[400px]
           -z-10
           opacity-40
           pointer-events-none
-          md:translate-x-90
+          md:translate-x-70
         "
       />
       <div className="flex flex-col items-center justify-center min-h-screen">
