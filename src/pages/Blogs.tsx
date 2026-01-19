@@ -19,7 +19,7 @@ const Blogs = () => {
                   <IoIosArrowDroprightCircle />
                 </p>
               </RouterLink>
-              <span className="text-[#BFBDBA]">11/01</span>
+              <span className="text-[#BFBDBA]">01/11</span>
               <div className="w-full h-px bg-[#404040] mt-4 mb-4" />
             </div>
           </div>
