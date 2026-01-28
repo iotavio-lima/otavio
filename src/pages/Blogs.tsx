@@ -1,6 +1,6 @@
 import Skeleton from "../components/Skeleton.tsx";
 import {Link as RouterLink} from "react-router";
-import {IoIosArrowDroprightCircle} from "react-icons/io";
+import { IoIosArrowForward } from "react-icons/io";
 
 const Blogs = () => {
   return (
@@ -15,8 +15,8 @@ const Blogs = () => {
                 className="flex justify-between w-[596px] max-w-112 max-[624px]:w-[356px] max-[416px]:w-[256px]"
               >
                 <p className="text-xl text-[#f2f2f2]">How did I learn english?</p>
-                <p className="text-xl text-[#404040]">
-                  <IoIosArrowDroprightCircle />
+                <p className="text-xl text-[#f2f2f2] hover:text-[#737373] transition duration-300">
+                  <IoIosArrowForward />
                 </p>
               </RouterLink>
               <span className="text-[#BFBDBA]">01/11</span>

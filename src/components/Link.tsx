@@ -1,4 +1,4 @@
-import { IoIosArrowDroprightCircle } from "react-icons/io";
+import { IoIosArrowForward } from "react-icons/io";
 import { Link as RouterLink } from "react-router-dom";
 
 interface CustomLinkProps {
@@ -18,8 +18,8 @@ const Link = ({ text, to }: CustomLinkProps) => {
         "
       >
         <p className="text-xl text-[#BFBDBA]">{text}</p>
-        <p className="text-xl text-[#404040]">
-          <IoIosArrowDroprightCircle />
+        <p className="text-xl text-[#f2f2f2] hover:text-[#737373] transition duration-300">
+          <IoIosArrowForward />
         </p>
       </RouterLink>
 
