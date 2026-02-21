@@ -119,8 +119,8 @@ const MainPage = () => {
           <button onClick={sendEmail} className="flex items-center justify-center bg-[#121212] hover:bg-[#0D0D0D] transition duration-300 text-[#D9D9D9] h-12 w-12 rounded-2xl shadow-[-4px_4px_0_0_rgba(0,0,0,0.3)] cursor-pointer"><IoSend /></button>
         </div>
         <div className="flex items-center justify-center mt-8 gap-4 max-[564px]:">
-          <SocialLink href='https://github.com/iotavio-lima' icon={<FaGithub />} />
-          <SocialLink href='https://www.linkedin.com/in/iotavio-lima/' icon={<FaLinkedin />} />
+          <SocialLink href='https://github.com/otavlima' icon={<FaGithub />} />
+          <SocialLink href='https://www.linkedin.com/in/otavlima/' icon={<FaLinkedin />} />
           <SocialLink href='https://www.instagram.com/otavlima7_/' icon={<FaInstagram />} />
           <SocialLink href='mailto:otavio.lima.co@gmail.com' icon={<MdOutlineMail />} />
         </div>
