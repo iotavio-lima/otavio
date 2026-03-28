@@ -11,7 +11,7 @@ const Projects = () => {
             <div className="mt-4 px-4">
               <h2 className="text-[#D9D9D9] text-xl font-semibold">Communicate AI</h2>
               <p className="text-sm text-[#D9D9D9] mt-2">Communicate AI — an AI assistant that helps you communicate better in professional and personal situations.</p>
-              <a href='https://communicate-9gtfd0oj4-otavio-lima-devs-projects.vercel.app/' target="_blank" rel="noopener noreferrer" className="flex items-center justify-between border border-[#404040] h-12 w-full px-6 rounded-xl mt-4 bg-[#0D0D0D] text-[#BFBDBA] text-xl hover:border-[#f2f2f2] hover:text-[#f2f2f2] transition duration-300 select-none shadow-[-2px_2px_4px_rgba(0,0,0,0.5)]">
+              <a href='https://communicate-ai-six.vercel.app/' target="_blank" rel="noopener noreferrer" className="flex items-center justify-between border border-[#404040] h-12 w-full px-6 rounded-xl mt-4 bg-[#0D0D0D] text-[#BFBDBA] text-xl hover:border-[#f2f2f2] hover:text-[#f2f2f2] transition duration-300 select-none shadow-[-2px_2px_4px_rgba(0,0,0,0.5)]">
                 <span>Communicate AI</span>
                 <span><IoIosArrowForward /></span>
               </a>
